@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roblox Dev Club</title>
+<meta name="description" content="A student organization at George Mason University for people who build on Roblox.">
+
+<link rel="icon" href="assets/logo-transparent.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/logo-transparent.png">
+
+<!-- Link embeds (Discord, Slack, iMessage, Twitter/X) -->
+<meta property="og:site_name" content="Roblox Dev Club">
+<meta property="og:title" content="Roblox Dev Club">
+<meta property="og:description" content="A student organization at George Mason University for people who build on Roblox.">
+<meta property="og:url" content="https://rbxdev.club/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://rbxdev.club/assets/hero-background.jpg">
+<meta property="og:image:width" content="2000">
+<meta property="og:image:height" content="1125">
+<meta property="og:image:alt" content="Roblox Dev Club logo over an abstract background">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14563b">
+
+<style>
+  *{box-sizing:border-box}
+
+  body{
+    margin:0;
+    min-height:100svh;
+    display:grid;
+    place-items:center;
+    padding:24px;
+    background:#06100c url("assets/hero-background.jpg") center/cover no-repeat fixed;
+    color:#f2f6f3;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;
+  }
+
+  /* scrim, so the text stays readable over the artwork */
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:linear-gradient(180deg, rgba(4,12,9,.55), rgba(4,12,9,.8));
+  }
+
+  main{
+    position:relative;
+    width:100%;
+    max-width:640px;
+    padding:clamp(32px, 6vw, 56px);
+    text-align:center;
+    background:rgba(9,20,15,.45);
+    border:1px solid rgba(233,242,236,.14);
+    border-radius:22px;
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    box-shadow:0 30px 70px -30px rgba(0,0,0,.85);
+  }
+
+  .logo{
+    display:block;
+    width:clamp(88px, 18vw, 120px);
+    height:auto;
+    max-width:100%;
+    margin:0 auto 24px;
+    filter:drop-shadow(0 12px 26px rgba(0,0,0,.5));
+  }
+
+  h1{
+    margin:0 0 20px;
+    font-size:clamp(2rem, 7vw, 3.2rem);
+    line-height:1.1;
+    letter-spacing:-.025em;
+  }
+
+  .rule{
+    width:52px;
+    height:3px;
+    margin:0 auto 24px;
+    border-radius:3px;
+    background:linear-gradient(90deg, #1f8f5c, #ffc93c);
+  }
+
+  p{
+    margin:0;
+    color:rgba(233,242,236,.72);
+    font-size:clamp(.95rem, 2.4vw, 1.05rem);
+  }
+</style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="assets/logo-transparent.png" alt="Roblox Dev Club logo" width="800" height="764">
+    <h1>Roblox Dev&nbsp;Club</h1>
+    <div class="rule"></div>
+    <!-- Legal disclaimer, do not remove -->
+    <p>
+      Roblox Dev Club is a student organization at George Mason University.
+      We are not affiliated with, endorsed by, or sponsored by Roblox Corporation.
+      Roblox is a trademark of Roblox Corporation.
+    </p>
+  </main>
+</body>
+</html>
